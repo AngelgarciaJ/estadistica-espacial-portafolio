@@ -60,10 +60,77 @@ section h2 {
   color: #0a74da;
 }
 
-/* ======== Acerca / Herramientas ======== */
-#about, #student, #teacher, #tools {
-  margin-bottom: 2rem;
+/* ---- Sección Acerca Unificada ---- */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
 }
+
+.about-left {
+  flex: 1 1 60%;
+  padding-right: 2rem;
+}
+
+.about-left h2 {
+  margin-bottom: 1rem;
+  color: #0a74da;
+}
+
+.about-left p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-right {
+  flex: 1 1 35%;
+  background: #f0f6ff;
+  border: 1px solid #cce0ff;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+}
+
+.about-right h3 {
+  margin-top: 0;
+  color: #0a74da;
+  margin-bottom: 0.8rem;
+}
+
+.about-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-right li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.about-right a {
+  color: #0a74da;
+  text-decoration: none;
+}
+
+.about-right a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-left {
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
 
 /* ======== Contenedor de Unidades ======== */
 .units {
@@ -162,4 +229,65 @@ footer .socials a:hover {
   header h1 { font-size: 1.4rem; }
   header .logo-left,
   header .logo-right { width: 45px; }
+}
+
+
+/* ---- Layout principal ---- */
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+.left-column article {
+  margin-bottom: 1.5rem;
+}
+.right-column {
+  background: #f5f8ff;
+  border-left: 4px solid #0a74da;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* ---- Accordion ---- */
+.accordion {
+  margin: 1rem auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f8f9fc;
+  border: 1px solid #ccc;
+}
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #0a74da;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.accordion-header:hover {
+  background: #095cb0;
+}
+.accordion-body {
+  display: none;
+  padding: 1rem;
+  animation: fade 0.3s ease-in-out;
+}
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ---- Responsivo ---- */
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+  .right-column {
+    margin-top: 1rem;
+  }
 }

@@ -1,177 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portafolio EST334 – Ángel García</title>
-  <meta name="description" content="Portafolio del curso EST334 - Estadística Espacial. Proyectos, mapas y ejercicios.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio EST334</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- ====== HEADER ====== -->
-  <header class="site-header">
-    <!-- logos en las esquinas (pequeños) -->
-    <img src="assets/img/logo_uni.png" alt="Universidad Nacional del Altiplano" class="logo corner left">
-    <img src="assets/img/logo_carrera.png" alt="Ingeniería Estadística e Informática" class="logo corner right">
 
-    <div class="header-inner">
-      <nav class="nav">
-        <a class="brand" href="index.html">Ángel García — EST334</a>
-
-        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-          ☰
-        </button>
-
-        <ul class="nav-links">
-          <li><a href="#descripcion">Acerca</a></li>
-          <li><a href="#herramientas">Herramientas</a></li>
-          <li><a href="#unidades">Unidades</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-
-      <main class="hero">
-        <h1>Portafolio — EST334: Estadística Espacial</h1>
-        <p class="hero-sub">Proyectos, análisis geoestadísticos y visualizaciones — Período 2025-II</p>
-        <div class="hero-cta">
-          <a href="#unidades" class="btn primary">Ver Unidades</a>
-          <a href="assets/Angel_CV.pdf" class="btn outline" target="_blank" rel="noopener">Descargar CV</a>
-        </div>
-      </main>
-    </div>
+  <!-- ======== Encabezado ======== -->
+  <header>
+    <img src="img/logo-unap.png" alt="UNAP" class="logo-left">
+    <h1>Portafolio del Curso EST334</h1>
+    <img src="img/logo-carrera.png" alt="Ingeniería Estadística e Informática" class="logo-right">
   </header>
 
-  <!-- ====== PAGE CONTENT ====== -->
-  <div class="container">
+ <!-- ======== Sección Acerca ======== -->
+<section id="about" class="about-container">
+  <div class="about-left">
+    <h2>Acerca del Curso</h2>
+    <p>
+      Soy Ángel García, estudiante de la Universidad Nacional del Altiplano Puno,
+      inscrito en el curso EST334 – Estadística Espacial (2025-II). Este portafolio
+      presenta los proyectos realizados en el curso.
+    </p>
+    <p><strong>Docente:</strong> Prof. Fred Torres Cruz</p>
+  </div>
 
-    <!-- DESCRIPCION, ESTUDIANTE, DOCENTE -->
-    <section id="descripcion" class="card section-about">
-      <div class="grid-2">
-        <div>
-          <h2>Descripción del Curso</h2>
-          <p>La Estadística Espacial es una rama que analiza datos con dependencia espacial. En este curso se abordan técnicas de geoestadística, modelado de autocorrelación espacial, interpolación (kriging) y análisis de patrones, aplicando herramientas como QGIS, R y Python.</p>
+  <aside class="about-right">
+    <h3>Información</h3>
+    <ul>
+      <li>🏛 Universidad Nacional del Altiplano Puno</li>
+      <li>📘 Curso: EST334 – Estadística Espacial</li>
+      <li>📅 2025 – Segundo Semestre</li>
+      <li>🔗 <a href="https://github.com/tu-usuario/tu-repo" target="_blank">Repositorio GitHub</a></li>
+    </ul>
+  </aside>
+</section>
+
+
+  <!-- ======== Unidades con Acordeón ======== -->
+  <section id="units">
+    <h2>Unidades</h2>
+
+    <!-- Unidad I -->
+    <div class="accordion">
+      <button class="accordion-header">Unidad I</button>
+      <div class="accordion-body">
+        <div class="projects">
+          <div class="project-card">
+            <img src="img/unidad1/proyecto1.png" alt="Proyecto 1">
+            <h4>Proyecto 1</h4>
+            <p>Descripción breve del proyecto 1.</p>
+            <a href="proyectos/proyecto1.pdf" target="_blank">Ver Proyecto</a>
+          </div>
+          <!-- Más proyectos aquí -->
         </div>
+      </div>
+    </div>
 
-        <div class="small-cards">
-          <div class="tiny-card">
-            <h3>Estudiante</h3>
-            <p>Ángel García — Ingeniería de Software (último ciclo). Contacto: <a href="#contacto">ver abajo</a>.</p>
+    <!-- Unidad II -->
+    <div class="accordion">
+      <button class="accordion-header">Unidad II</button>
+      <div class="accordion-body">
+        <div class="projects">
+          <div class="project-card">
+            <img src="img/unidad2/proyecto1.png" alt="Proyecto 1 U2">
+            <h4>Proyecto 1</h4>
+            <p>Descripción breve del proyecto 1 de la Unidad II.</p>
+            <a href="proyectos/proyectoU2-1.pdf" target="_blank">Ver Proyecto</a>
           </div>
-
-          <div class="tiny-card">
-            <h3>Docente</h3>
-            <p>Prof. Fred Torres Cruz — Coordinador del curso EST334.</p>
-          </div>
-
-          <div class="tiny-card">
-            <h3>Información</h3>
-            <p>2025-II · Nivel Pregrado · 4 créditos</p>
-          </div>
+          <!-- Más proyectos aquí -->
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- HERRAMIENTAS -->
-    <section id="herramientas" class="section-tools">
-      <h2>Herramientas y Tecnologías</h2>
-      <p class="muted">Herramientas que se aplicarán en los proyectos del curso.</p>
-
-      <ul class="tools-list">
-        <li>QGIS / SIG</li>
-        <li>R (sf, gstat, raster)</li>
-        <li>Python (GeoPandas, rasterio)</li>
-        <li>PostGIS / PostgreSQL</li>
-        <li>Git / GitHub / GitHub Pages</li>
-      </ul>
-    </section>
-
-    <!-- UNIDADES -->
-    <section id="unidades" class="section-units">
-      <h2>Unidades del Curso</h2>
-      <p class="muted">Cada unidad contiene sus proyectos y entregables. Haz clic en "Entrar" para ver los trabajos específicos.</p>
-
-      <div class="units-grid">
-
-        <!-- Unidad I -->
-        <article class="unit-card">
-          <header class="unit-header unit-i">
-            <h3>Unidad I</h3>
-            <p class="unit-sub">Fundamentos de análisis espacial y geoestadística</p>
-            <a href="unidad1.html" class="btn small">Entrar a Unidad I</a>
-          </header>
-
-          <div class="unit-body cascade">
-            <!-- Proyecto 1 -->
-            <a class="project-oval" href="projects/unidad1/proyecto1.pdf" target="_blank" rel="noopener">
-              <img src="assets/img/proj1.jpg" alt="Proyecto 1">
-              <div class="project-info">
-                <h4>Proyecto 1 — Mapas Exploratorios</h4>
-                <p>Exploración y limpieza de datos espaciales; mapas de densidad y clustering.</p>
-              </div>
-            </a>
-
-            <!-- Proyecto 2 -->
-            <a class="project-oval" href="projects/unidad1/proyecto2.pdf" target="_blank" rel="noopener">
-              <img src="assets/img/proj2.jpg" alt="Proyecto 2">
-              <div class="project-info">
-                <h4>Proyecto 2 — Autocorrelación</h4>
-                <p>Índices de Moran y pruebas de autocorrelación espacial.</p>
-              </div>
-            </a>
-
-          </div>
-        </article>
-
-        <!-- Unidad II -->
-        <article class="unit-card">
-          <header class="unit-header unit-ii">
-            <h3>Unidad II</h3>
-            <p class="unit-sub">Modelado espacial avanzado e interpolación (kriging)</p>
-            <a href="unidad2.html" class="btn small">Entrar a Unidad II</a>
-          </header>
-
-          <div class="unit-body cascade">
-            <!-- Proyecto 1 -->
-            <a class="project-oval" href="projects/unidad2/proyecto1.pdf" target="_blank" rel="noopener">
-              <img src="assets/img/proj3.jpg" alt="Proyecto 3">
-              <div class="project-info">
-                <h4>Proyecto 3 — Variogramas</h4>
-                <p>Estimación y modelado de variogramas experimentales.</p>
-              </div>
-            </a>
-
-            <!-- Proyecto 2 -->
-            <a class="project-oval" href="projects/unidad2/proyecto2.pdf" target="_blank" rel="noopener">
-              <img src="assets/img/proj4.jpg" alt="Proyecto 4">
-              <div class="project-info">
-                <h4>Proyecto 4 — Kriging</h4>
-                <p>Interpolación espacial y validación cruzada del modelo kriging.</p>
-              </div>
-            </a>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-  </div> <!-- /container -->
-
-  <!-- ====== FOOTER ====== -->
-  <footer id="contacto" class="site-footer">
-    <div class="footer-inner container">
-      <div class="footer-left">
-        <p>© 2025 Ángel García — EST334 · Universidad Nacional del Altiplano</p>
-        <p class="muted small">Proyecto educativo: Estadística Espacial · Período 2025-II</p>
-      </div>
-
-      <div class="footer-right social">
-        <a href="https://www.linkedin.com/in/TU_PERFIL" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-        <a href="https://www.instagram.com/TU_PERFIL" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-        <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-      </div>
+  <!-- ======== Pie de página ======== -->
+  <footer>
+    <p>&copy; 2025 Ángel García. Todos los derechos reservados.</p>
+    <div class="socials">
+      <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
+      <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+      <a href="https://instagram.com/tu-usuario" target="_blank">Instagram</a>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/accordion.js"></script>
 </body>
 </html>
